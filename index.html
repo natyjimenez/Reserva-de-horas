@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <form action="" class="formulario" id="formulario">
+            <!--Rut-->
+            <div class="formulario__grupo" id="grupo__rut">
+                <label for="rut" class="formulario__label">Rut</label>
+                <input type="text" class="formulario__input" name="rut" id="rut" placeholder="12.345.678-9">
+                <p class="formulario__input-error">*El rut ingresado debe tener el siguiente formato 00.000.000-0</p>
+            </div>
+            <!--Nombre-->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John ">
+                <p class="formulario__input-error">*El campo nombre solo puede incluir letras</p>
+            </div>
+            <!--Apellidos-->
+            <div class="formulario__grupo" id="grupo__apellido">
+                <label for="apellido" class="formulario__label">Apellidos</label>
+                <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Bonachon">
+                <p class="formulario__input-error">*El campo apellidos solo puede incluir letras</p>
+            </div>
+            <!--Edad-->
+            <div class="formulario__grupo" id="grupo__edad">
+                <label for="edad" class="formulario__label">Edad</label>
+                <input type="text" class="formulario__input" name="edad" id="edad" placeholder="40">
+                <p class="formulario__input-error">*El campo edad debe incluir solo números y no puede superar los 3
+                    dígitos</p>
+            </div>
+            <!--Email-->
+            <div class="formulario__grupo" id="grupo__email">
+                <label for="email" class="formulario__label">Email</label>
+                <input type="text" class="formulario__input" name="email" id="email" placeholder="ejemplo@email.com">
+                <p class="formulario__input-error">*El correo debe cumplir con el siguiente formato ejemplo@email.com
+                </p>
+            </div>
+            <!--Especialidad-->
+            <div class="formulario__grupo" id="grupo__especialidad">
+                <label for="especialidad" class="formulario__label">Especialidad</label>
+                <select name="especialidad" id="especialidad">
+                    <option value="">Selecciona Especialidad</option>
+                    <option>Broncopulmonar</option>
+                    <option>Cardiología</option>
+                    <option>Dental</option>
+                    <option>Inmunología</option>
+                    <option>Medicina General</option>
+                    <option>Piscología</option>
+                    <option>Psiquiatría</option>
+                </select>
+            </div>
+            <!--Fecha-->
+            <div class="formulario__grupo" id="grupo__fecha">
+                <label for="fecha" class="formulario__label">Fecha</label>
+                <input type="text" class="formulario__input" name="fecha" id="fecha" placeholder="31-12-2020">
+                <p class="formulario__input-error">*La fecha debe cumplir con el siguiente formato dd-mm-yyyy</p>
+            </div>
+            <!--Hora-->
+            <div class="formulario__grupo" id="grupo__hora">
+                <label for="hora" class="formulario__label">Hora</label>
+                <select name="hora" id="hora">
+                    <option value="">Selecciona Horario</option>
+                    <option>10:00</option>
+                    <option>10:30</option>
+                    <option>11:00</option>
+                    <option>11:30</option>
+                    <option>12:00</option>
+                    <option>12:30</option>
+                    <option>13:00</option>
+                </select>
+            </div>
+            <!--Mensaje Error-->
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario
+                    correctamente. </p>
+            </div>
+            <!--Mensaje Exito-->
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Su cita ha sido agendada correctamente!</p>
+            </div>
+        </form>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
